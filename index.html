@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial Básico – GitHub Codespaces</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+        color: #222;
+        line-height: 1.6;
+      }
+      header {
+        background: #24292e;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      main {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        padding: 20px 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2,
+      h3 {
+        color: #24292e;
+      }
+      code {
+        background: #eee;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+      pre {
+        background: #eee;
+        padding: 10px;
+        border-radius: 6px;
+        overflow-x: auto;
+      }
+      ul,
+      ol {
+        padding-left: 20px;
+      }
+      .section {
+        margin-bottom: 40px;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        color: #555;
+      }
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Tutorial Básico – GitHub Codespaces</h1>
+      <p>Desenvolvimento Web 100% no navegador</p>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>O que é o Codespaces?</h2>
+        <p>
+          O GitHub Codespaces é um ambiente de desenvolvimento completo, baseado
+          no Visual Studio Code, executado totalmente na nuvem. Ele permite que
+          você programe sem instalar nada na sua máquina.
+        </p>
+        <ul>
+          <li>Funciona direto no navegador</li>
+          <li>Inclui terminal Linux</li>
+          <li>Roda HTML, CSS, JS, Node, Python, Java etc.</li>
+          <li>Permite instalar extensões</li>
+          <li>Integração total com GitHub</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Requisitos</h2>
+        <ul>
+          <li>Conta no GitHub</li>
+          <li>
+            Um repositório (próprio ou público), use o que criamos em aula
+          </li>
+          <li>Nenhuma instalação necessária</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Criando seu primeiro Codespace</h2>
+        <p>
+          Caso ainda não tenha feito upload de nenhum arquivo, crie da seguinte
+          maneira
+        </p>
+        <img src="codespace_semarquivo.gif" alt="" srcset="" />
+
+        <p>
+          Caso já tenha feito upload de algum arquivo, será da seguinte maneira:
+        </p>
+        <ol>
+          <li>Clique no botão verde <strong>&lt;&gt; Code</strong></li>
+          <li>Abra a aba <strong>Codespaces</strong></li>
+          <li>Clique em <strong>Create codespace on main</strong></li>
+        </ol>
+        <p>O ambiente abrirá automaticamente no navegador.</p>
+        <img src="codespace2.gif" alt="" srcset="" />
+      </section>
+
+      <section class="section">
+        <h2>Interface do Codespaces</h2>
+        <p>Você terá acesso a:</p>
+        <ul>
+          <li><strong>Explorer</strong> – Arquivos e pastas</li>
+          <li><strong>Search</strong> – Busca dentro do projeto</li>
+          <li><strong>Source Control</strong> – Git integrado</li>
+          <li><strong>Run and Debug</strong> – Execução e depuração</li>
+          <li><strong>Terminal Linux</strong></li>
+          <li><strong>Extensions</strong> – Extensões web e padrão</li>
+          <li>
+            <strong>Ports</strong> – Visualização de portas para aplicações web
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Fazendo upload de seus arquivos</h2>
+        <p>
+          Arraste seus arquivos e subpastas para o explorador de arquivos do
+          codespace, como na animação a seguir
+        </p>
+        <img src="upload.gif" alt="" srcset="" />
+      </section>
+      <section class="section">
+        <h2>Criando Arquivos HTML/CSS/JS</h2>
+        <p>Crie seus arquivos normalmente no VS Code:</p>
+        <ul>
+          <li><code>index.html</code></li>
+          <li><code>style.css</code></li>
+          <li><code>script.js</code></li>
+        </ul>
+        <p>
+          Não se esqueça de criar o arquivo <code>index.html</code>, ele será a
+          página principal do seu site. Se for muito trabalhoso alterar todos os
+          seus links, crie apenas uma cópia da página inicial e dê o nome de
+          <code>index.html</code>
+        </p>
+        <p>O autosave pode ser ativado no canto inferior direito.</p>
+      </section>
+
+      <section class="section">
+        <h2>▶ Rodando um site com Live Server</h2>
+        <h3>1. Instalar extensão</h3>
+        <ul>
+          <li>Acesse <strong>Extensions</strong></li>
+          <li>Busque por <strong>Live Server</strong></li>
+          <li>Clique em instalar</li>
+        </ul>
+        <h3>2. Executar o servidor</h3>
+        <ul>
+          <li>Abra o arquivo <code>index.html</code></li>
+          <li>Clique em <strong>Go Live</strong></li>
+          <li>Uma URL será aberta com seu site funcionando</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Usando Git</h2>
+        <p>
+          Você pode usar o painel ou o terminal. Ou a inteface, conforme imagem
+          abaixo.
+        </p>
+
+        <h3>Comandos úteis:</h3>
+        <pre><code>git status
+          git add .
+          git commit -m "Atualização"
+          git push</code></pre>
+      </section>
+
+      <section>
+        <h2>Alterando os arquivos e sincronizando o GitHub</h2>
+        <p>
+          Após alterar seus arquivos, é necessário atualizar o código no Github,
+          conforme a imagem abaixo: Obs: são dois passos, primeiro o commit
+          (Confirmação) e depois o push (Sincronizar). Primeiro
+        </p>
+        <img src="commit.gif" alt="" />
+      </section>
+
+      <section>
+        <h2>Ativação do GitHub Pages</h2>
+        <ol>
+          <li>Abra o repositório no GitHub.</li>
+          <li>
+            Clique em Settings (ícone de engrenagem) na barra superior do
+            repositório.
+          </li>
+          <li>No menu lateral, clique em Pages.</li>
+          <li>Em Build and deployment (ou Source) escolha:</li>
+          <li>
+            Branch: selecione main (ou gh-pages) — a branch que contém o site.
+          </li>
+          <li>Folder: escolha / (root) para publicar a raiz do repositório.</li>
+          <li>Clique em Save (ou Save/Save and deploy).</li>
+          <li>
+            Aguarde alguns segundos — o GitHub irá processar e mostrará a URL
+            publicada:
+            <code
+              >https://&lt;seu-usuario&gt;.github.io/&lt;nome-do-repositorio&gt;</code>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2>📝 Atividade prática</h2>
+        <ol>
+          <li>
+            Acesse o seu repositório, faça o upload de seus arquivos de projeto
+            e ative o GitHub Pages
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>Desenvolvido para aulas – Luís Maron</footer>
+  </body>
+</html>
