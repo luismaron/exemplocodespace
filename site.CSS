@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(26, 66, 51);
+    color: rgb(255, 255, 255);
+}
+
+#cabecalho {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(12, 33, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.botao {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(32, 61, 47);
+    color: #f5ebeb;
+    transition: 0.3s;
+    font-weight: bold;
+    text-align: center;
+}
+
+.botao:hover {
+    background-color: rgb(45, 78, 67);
+    transform: translateY(-2px);
+}
+
+body.inicio {
+    background-image:
+        linear-gradient(rgba(26, 66, 51, 0.7), rgb(25, 63, 49)),
+        url(https://i.pinimg.com/736x/dc/c2/3e/dcc23e55c8c937b3d03b930c8e90a866.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 70px);
+    padding: 20px;
+}
+
+.conteudo h1 {
+    color: rgb(17, 41, 23);
+    font-size: 60px;
+    text-shadow: 0 0 15px rgba(134, 194, 116, 0.7);
+}
+
+.conteudo-principal h2 {
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.conteudo .botao {
+    margin: 5px;
+}
+
+.titulo {
+    color: rgb(43, 82, 55);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+}
+
+.subtitulo {
+    color: #ccc;
+    text-shadow: none;
+    font-weight: 300;
+    font-size: 1.1rem;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.personagem {
+    width: 280px;
+    background-color: #10241a;
+    border: 1px solid #29613f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(156, 218, 122, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.personagem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(10, 27, 12, 0.5);
+}
+
+.personagem img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.personagem .botao {
+    margin: 15px;
+    width: calc(100% - 30px);
+}
+
+.missao {
+    width: 300px;
+    background-color: #10241a;
+    border: 1px solid #29613f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(156, 218, 122, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.missao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(10, 27, 12, 0.5);
+}
+
+.img2 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.missao1 {
+    padding: 20px;
+    color: #dbcece;
+}
+
+.missao1 h3 {
+    margin-top: 0;
+    color: #6bb383;
+}
+
+.missao1 p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.img3 {
+    width: 25%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.curio {
+    display: flex;
+    width: 100%;
+    background-color: #10241a;
+    border: 1px solid #29613f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(156, 218, 122, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(10, 27, 12, 0.5);
+}
+
+.vandinha {
+    margin-left: 9px;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
